@@ -3677,6 +3677,21 @@ input, select, textarea {
 		max-width: 50%;
 	}
 
+	.description-text {
+		font-size: 12px;
+		color: black;
+		text-align: left;
+		position: absolute;
+		bottom: 0;
+		padding: 0;
+		border: 0;
+		padding-left: 10px;
+	}
+
+	.parent-description-text {
+		position: relative;
+	}
+
 	.to-fit-parent {
 		max-height: 100%;
 		max-width: 100%;
@@ -3688,11 +3703,11 @@ input, select, textarea {
 	}
 
 	.image-thin-border {
-		border: 0.5px solid rgb(0,0,0,0.6);
+		border: 0px solid rgb(0,0,0,0.6);
 	}
 
 	.video-thin-border {
-		border: 0.5px solid rgb(0,0,0,0.8);
+		border: 1.5px solid rgb(0,0,0,0.8);
 	}
 
 
