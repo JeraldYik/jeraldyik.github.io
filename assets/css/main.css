@@ -3666,16 +3666,33 @@ input, select, textarea {
 
 	}
 
-/* Custom images */
+/* Custom styles */
 
-	#reverb_icon {
+	#proudly-presenting {
+		font-size: 18px;
+	}
+
+	#reverb-icon {
 		max-height: 50%;
 		max-width: 50%;
 	}
 
-	.to_fit_parent {
+	.to-fit-parent {
 		max-height: 100%;
 		max-width: 100%;
+	}
+
+	.dp-resize {
+		height: 70px;
+		width: 70px;
+	}
+
+	.image-thin-border {
+		border: 0.5px solid rgb(0,0,0,0.6);
+	}
+
+	.video-thin-border {
+		border: 0.5px solid rgb(0,0,0,0.8);
 	}
 
 
