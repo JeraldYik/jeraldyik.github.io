@@ -3865,7 +3865,7 @@ input, select, textarea {
 
 	/* Custom styles */
 
-	#proudly-presenting {
+	#main_name {
 		font-size: 18px;
 	}
 
@@ -3916,11 +3916,6 @@ input, select, textarea {
 		bottom: 0;
 		padding-top: 20px;
 		font-size: 10px;
-	}
-
-	#reverb_icon {
-		height: 55px;
-		width: 55px;
 	}
 
 
