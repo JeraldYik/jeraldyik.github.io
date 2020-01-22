@@ -1,0 +1,878 @@
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ReVerb</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section class="intro">
+						<header>
+							<h1><img src="images/reverb_icon_black.png" id="reverb_icon">&nbsp;ReVerb</h1>
+							<p id="proudly-presenting">Proudly presented to you by Jerald Yik Jia Ler, Lim Xiao Qi, Thong Hoi Wei (Joyce), Colin Loh, Chiang Kai Jun & Tiffany Kok.</p>
+							<ul class="actions">
+								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+						<!-- change this when new model -->
+						<div class="content" style="height:700px">
+							<span class="image fill" data-position="bottom"><img src="images/tsh_model.jpg" alt="" /></span>
+						</div>
+					</section>
+
+				<!-- Section (Product Showcase)-->
+					<section id="first">
+						<header>
+							<h2 class="major">Our Product</h2>
+						</header>
+						<div class="content">
+							<p>ReVerb was designed for people who are completely hearing-impaired. It provides them with aural situational awareness of the world around them by converting surrounding sounds and alerts into vibrations that they can feel. It has 4 main functionalities:<br>
+							<ol>
+								<li>Distinguishes between different amplitudes of sound</li>
+								<li>Distinguishes the Direction of Arrival of sound</li>
+								<li>Distinguishes spoken word (e.g. name, danger words etc)</li>
+								<li>Distinguishes distinct sounds (e.g. car horn etc)</li>
+							</ol>
+							It then alerts the user to the specific situation via different pulse patterns of varying strength, enabling the user to quickly react to them.<br>
+							Our prototype has 3 main components:<br><br>
+							<ol>
+								<li>Main Control Unit (MCU) worn at the waist</li>
+								<li>ReSpeaker Mic Array mounted on a cap</li>
+								<li>Glasses with vibration motors installed</li>
+							</ol>
+							</p>
+
+
+							<div class="content">
+								<div class="gallery">
+									<a href="images/specs_final.jpg" class="landscape"><img src="images/specs_final.jpg" alt="" /></a>
+									<a href="images/module_final.jpg"><img src="images/module_final.jpg" alt="" /></a>
+									<a href="images/speaker_final.jpg"><img src="images/speaker_final.jpg" alt="" /></a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- Section (Table of Contents)-->
+					<section id="toc">
+						<header>
+							<h2 class="major">Table of Contents</h2>
+						</header>
+						<div class="content">
+							<ul>
+								<li><h4><a href="#brief-members" class='scrolly'>Honourary Contributors</a></h4></li>
+								<li><h4><a href="#software" class='scrolly'>Software</a></h4></li>
+								<li><h4><a href="#hardware" class='scrolly'>Hardware</a></h4></li>
+								<li><h4><a href="#anf" class='scrolly'>Adminstrative & Finance</a></h4></li>
+								<li><h4><a href="#members" class='scrolly'>Showcase of Individual Responsibilities</a></h4></li>
+								<li><h4><a href="#special-thanks" class='scrolly'>Acknowledgements</a></h4></li>
+								<li><h4><a href="#the-team" class='scrolly'>Meet The Team</a></h4></li>
+							</ul>
+						</div>
+					</section>
+
+					
+
+				<!-- Section (Introducing members)-->
+					<section id="brief-members">
+						<header>
+							<h2>Honourary Contributors</h2>
+						</header>
+						<div class="content">
+							<p>Presenting to you, the <strong>ReVerb</strong> team:</p>
+							<ul class="feature-icons">
+								<li><img class="dp-brief"src="images/selfies/jl.png" /><a href='#jl' class='scrolly align-with-text'>Jerald Yik Jia Ler</a></li>
+								<li><img class="dp-brief"src="images/selfies/xq.png" /><a href='#xq' class='scrolly align-with-text'>Lim Xiao Qi</a></li>
+								<li><img class="dp-brief"src="images/selfies/joyce.png" /><a href='#joyce' class='scrolly align-with-text'>Thong Hoi Wei (Joyce)</a></li>
+								<li><img class="dp-brief" src="images/selfies/colin.png" /><a href='#colin' class='scrolly align-with-text'>Colin Loh</a></li>
+								<li><img class="dp-brief" src="images/selfies/kaijun.png" /><a href='#kaijun' class='scrolly align-with-text'>Chiang Kai Jun</a></li>
+								<li><img class="dp-brief" src="images/selfies/tiff.png" /><a href='#tiff' class='scrolly align-with-text'>Tiffany Kok</a></li>
+							</ul>
+							<a href="#toc" class="scrolly back-to-top">Back to top</a>
+						</div>
+					</section>
+
+				<!-- Section (Software)-->
+				<section id="software">
+					<header>
+						<h2>Software</h2>
+					</header>
+					<div class="content">
+						<p>The Software Team consisting of <a href="#jl" class='scrolly'>Jerald Yik</a>, <a href="#xq" class='scrolly'>Lim Xiao Qi</a> & <a href="#joyce" class='scrolly'>Joyce Thong</a> spent countless hours researching on Speech-To-Text (STT) algorithms (with Jasper), the workings of Raspberry Pi & the ReSpeaker module. Machine Learning models are also implemented to detect and differentiate different types of sounds (car horn etc). With these software designs and models as mentioned above, molded towards desired functionalities, ReVerb is born.<br><br>Please turn on sound to view the full content of the videos.</p>
+
+							<!-- Section (Jasper First Attempt)-->
+							<section>
+								<header>
+									<h3>Jasper First Attempt</h3>
+									<p>Successfully booting up the main Jasper module for the first time.</p>
+								</header>
+								<div class="content">
+									<div class="gallery">
+										<a href="images/software_videos/jasper_first_attempt.mp4" class="image filtered span-2-5" data-position="top"><video class='to-fit-parent' controls><source src="images/software_videos/jasper_first_attempt.mp4" type="video/mp4"></video></a>
+									</div>
+								</div>
+							</section>
+
+							<!-- Section (Motor)-->
+							<section>
+								<header>
+									<h3>Testing out Motor</h3>
+									<p>Utilising the Jasper module as a switch for the motor. Upon picking up certain input words, the Jasper module will trigger certain sub-modules to supply voltage to the motor.</p>
+								</header>
+								<div class="content">
+									<div class="gallery">
+										<a href="images/software_videos/motor.mp4" class="image filtered span-2-5" data-position="top"><video class='to-fit-parent' controls><source src="images/software_videos/motor.mp4" type="video/mp4"></video></a>
+									</div>
+								</div>
+							</section>
+
+							<!-- Section (Jasper DOA LED)-->
+							<section>
+								<header>
+									<h3>Testing Out Jasper with ReSpeaker's DOA functionality using LED</h3>
+									<p>Testing out ReSpeaker's Directional of Arrival (DOA) functionality. Based on the DOA of certain sounds, the Jasper module will generate the respective output. In this case, when the required sound is coming from the left of the ReSpeaker, the blue LED will light up. Likewise, when the required sound is coming from the right, the yellow LED will light up.</p>
+								</header>
+								<div class="content">
+									<div class="gallery">
+										<a href="images/software_videos/jasper_DOA_LED.mp4" class="image filtered span-2-5" data-position="top"><video class='to-fit-parent' controls><source src="images/software_videos/jasper_DOA_LED.mp4" type="video/mp4"></video></a>	
+									</div>
+								</div>
+							</section>
+
+							<!-- Section (Voltage Variation)-->
+							<section>
+								<header>
+									<h3>Testing out Voltage Variation</h3>
+									<p>Utilising the in-built algorithms to vary voltage supplied to GPIO pins in the Raspberry Pi, we are able to vary the voltage supplied to the respective LED lights, and hence their brightness, depending on the modules triggered. This will be determined by the respective sounds embedded within algorithms in different sub-modules.</p>
+								</header>
+								<div class="content">
+									<div class="gallery">
+										<a href="images/software_videos/voltage_variation.mp4" class="image filtered span-2-5" data-position="top"><video class='to-fit-parent' controls><source src="images/software_videos/voltage_variation.mp4" type="video/mp4"></video></a>			
+									</div>
+								</div>
+							</section>
+							<a href="#toc" class="scrolly back-to-top">Back to top</a>
+						</div>
+					</section>
+
+				<!-- Section (Hardware)-->
+					<section id="hardware">
+						<header>
+							<h2>Hardware</h2>
+						</header>
+						<div class="content">
+							<p>The Hardware Team consisting of <a href="#colin" class="scrolly">Colin Loh</a> and <a href="#kaijun" class="scrolly">Chiang Kai Jun</a> worked around many constraints to formulate the ideal physical prototype to showcase our solution. Countless hours and many iterations later, we arrived at a design we were satisfied with. Here is our journey.</p>
+
+							<!-- Section (Initial Ideation Sketch)-->
+								<section>
+									<header>
+										<h3>Initial Ideation Sketch</h3>
+										<p>This sketch was done during the ideation stage. From our idea, we came up with a lo-fi, barebones mock-up to gauge public perceptions, as well as to assess the feasibility of the design. </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/hardware_images/initial_sketch_neckband_2.jpg"><img src="images/hardware_images/initial_sketch_neckband_2.jpg" alt="" /></a>
+											<a href="images/hardware_images/initial_sketch_neckband_3.jpg"><img src="images/hardware_images/initial_sketch_neckband_3.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+								<!-- Section (Visual Prototype)-->
+								<section>
+									<header>
+										<h3>Visual Prototype</h3>
+										<p>Once we decided that our idea was feasible, we came up with a visual prototype, exploring different ways a user might wear and interact with it. It included stereo microphones for Direction of Arrival (DOA) detection, and stereo vibrators to alert the user of the direction of sound.<br>
+										We decided to have 2 separate working modules, the Main Control Unit (MCU) containing the processors and stereo microphones, and the Peripheral Alert Device (PAD) to alert the user of his/her surroundings. </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/hardware_images/initial_model_neckband_2.jpg"><img src="images/hardware_images/initial_model_neckband_2.jpg" alt="" /></a>
+											<a href="images/hardware_images/initial_model_neckband_1.jpg"><img src="images/hardware_images/initial_model_neckband_1.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+								<!-- Section (First Working Prototype)-->
+								<section>
+									<header>
+										<h3>First Working Prototype</h3>
+										<p>The Raspberry Pi case went through 3 iterations to the final product. This was the first case. It was compact and functional, But Prof Teoh’s input was that the design was uninspiring and bland, urging us to add a few organic curves in a nod to Italian Design. With this, we went back to the drawing board for the second prototype. </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/hardware_images/1st_model_module_1.jpg"><img src="images/hardware_images/1st_model_module_1.jpg" /></a>
+											<a href="images/hardware_images/1st_model_module_2.jpg"><img src="images/hardware_images/1st_model_module_2.jpg" alt="" /></a>
+											<a href="images/hardware_images/1st_3dprint_module_1.jpg"><img src="images/hardware_images/1st_3dprint_module_1.jpg" alt="" /></a>
+											<a href="images/hardware_images/1st_3dprint_module_2.jpg"><img src="images/hardware_images/1st_3dprint_module_2.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+								<!-- Section (Second Working Prototype)-->
+								<section>
+									<header>
+										<h3>Second Working Prototype</h3>
+										<p>Our second case was inspired by the shape of the Lamborghini logo, and Prof Teoh said the design was ‘cool’, which affirmed our design direction. However, we found that the case was far too large to be practical. We thus made one last iteration, to find the right balance in compactness and style. </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/hardware_images/2nd_3dprint_module_1.jpg"><img src="images/hardware_images/2nd_3dprint_module_1.jpg" alt="" /></a>
+											<a href="images/hardware_images/2nd_model_module_2.jpg"><img src="images/hardware_images/2nd_model_module_2.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+								<!-- Section (Final Prototype)-->
+								<section>
+									<header>
+										<h3>Third Model Module</h3>
+										<p>The last prototype fits the Raspberry Pi and battery in a compact case, while also maintaining some curves. We decided to proceed with this for our working prototype.</p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/hardware_images/3rd_model_module_1.jpg"><img src="images/hardware_images/3rd_model_module_1.jpg" alt="" /></a>
+											<a href="images/hardware_images/3rd_3dprint_module_1.jpg"><img src="images/hardware_images/3rd_3dprint_module_1.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+								<!-- Section (Specs)-->
+								<section>
+									<header>
+										<h3>Spectacle Module</h3>
+										<p>The spectacle design for the device allows easier adoption among the masses, in contrast to usual hearing aids which are more conspicuous. The positioning of the vibration module would be well-placed in contact with the Mastoid bone, providing the highest sensitivity to users. Taking inspiration from Italian distinct designs, we decided with a striking red and black combination.</p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/hardware_images/specs_white.jpg" class="landscape"><img src="images/hardware_images/specs_white.jpg" alt="" /></a>
+											<a href="images/hardware_images/specs_spraypaint.mp4"><video class='to-fit-parent' controls><source src="images/hardware_images/specs_spraypaint.mp4" type="video/mp4"></video></a>
+											<a href="images/hardware_images/specs_model.jpg"><img src="images/hardware_images/specs_model.jpg" alt="" /></a>
+											<a href="images/hardware_images/specs_red.jpg" class="landscape"><img src="images/hardware_images/specs_red1.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+								<!-- Section (ReSpeaker Housing Module)-->
+								<section>
+									<header>
+										<h3>ReSpeaker Housing Module</h3>
+										<p>One design limitation was that the ReSpeaker microphone array had to be positioned on the XY plane for the DOA functionality to work. With this in mind, we implemented the ReSpeaker on a cap that the user can wear for our working prototype.</p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/hardware_images/respeaker_housing.jpg" class="landscape"><img src="images/hardware_images/respeaker_housing.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+								<!-- Section (3D-Printing Process)-->
+								<section>
+									<header>
+										<h3>3D-Printing Process</h3>
+										<p>The designs were done on Solidworks and Shapr3D. They were then printed on a PRUSA i3 Mk3 3D printer using PLA.</p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/hardware_images/3dprint_process.jpg" class="landscape"><img src="images/hardware_images/3dprint_process.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+							<a href="#toc" class="scrolly back-to-top">Back to top</a>
+						</div>
+					</section>
+
+				<!-- Section (Administrative & Finances)-->
+				<section id="anf">
+					<header>
+						<h2 class="major">Administrative & Finances</h2>
+					</header>
+					<div class="content">
+						
+					</header>
+					<div class="content">
+						<p><a href="#tiff" class="scrolly">Tiffany Kok</a> mainly foresaw the major administrative & financing matters throughout the entire course of the project. She is the main liasion officer with external parties, mainly the ENT specialist, Dr Ho. She is also in charge of the purchasing of equipment relevant to the prototype.</p>
+						<div class="gallery">
+							<a href="images/reply_from_euchin.jpg"><img src="images/reply_from_euchin.jpg" /></a>
+							<a href="images/expenditure.jpg"><img src="images/expenditure.jpg" alt="" /></a>
+						</div>
+					</div>
+					<a href="#toc" class="scrolly back-to-top">Back to top</a>
+					</div>
+				</section>
+
+				<!-- Section (Responsibilities)-->
+					<section id="members">
+						<header>
+							<h2>Showcase of individual responsibilities</h2>
+						</header>
+						<div class="content">
+							<p>Below are the testimonials from the individual members:<p>
+
+							<!-- Section (Jerald)-->
+							<section id="jl">
+								<header>
+									<!-- <h2 class="major"><img src="images/selfies/kaijun.png" class="dp-resize"/>
+									&nbsp;Chiang Kai Jun</h2> -->
+								</header>
+								<div class="content">
+									<h2><img src="images/selfies/jl.png" class="dp-resize align-with-text"/>
+									&nbsp;Jerald Yik Jia Ler</h2>
+									<p>Specialising in Computer Science, Jerald works hand-in-hand with his fellow Computer Scientist peers. Jerald made progress on implementing the Jasper module, the DOA functionality on ReSpeaker, as well as its integration into Jasper. Jerald is the creator and designer of this E-pamphlet.</p>
+								</div>
+							</section>
+
+							<!-- Section (XQ)-->
+							<section id="xq">
+								<header>
+									<!-- <h2 class="major"><img src="images/selfies/kaijun.png" class="dp-resize"/>
+									&nbsp;Chiang Kai Jun</h2> -->
+								</header>
+								<div class="content">
+									<h2><img src="images/selfies/xq.png" class="dp-resize align-with-text"/>
+									&nbsp;Lim Xiao Qi</h2>
+									<p>Specialising in Computer Science, Xiao Qi works hand-in-hand with his fellow Computer Scientist peers. Xiao Qi made progress on implementing the Jasper module, and the variable loudness and voltage functionalities, as well as the integration of motors into ReVerb. Xiao Qi also implemented machine learning models of different everyday sounds (car horns, dog barking etc) via Keras & Tensorflow.</p>
+								</div>
+							</section>
+
+							<!-- Section (Joyce)-->
+							<section id="joyce">
+								<header>
+									<!-- <h2 class="major"><img src="images/selfies/kaijun.png" class="dp-resize"/>
+									&nbsp;Chiang Kai Jun</h2> -->
+								</header>
+								<div class="content">
+									<h2><img src="images/selfies/joyce.png" class="dp-resize align-with-text"/>
+									&nbsp;Thong Hoi Wei (Joyce)</h2>
+									<p>Joyce identified the gap in the hearing aids market, and assisted in conceptualising the idea of an aid for the deaf in a world of sounds. Specialising in Computer Science, she was also involved in the initial set-up of ReVerb, including the vital act of creating a GitHub backup for the code. Presentation slides were designed and created by Joyce.</p>
+								</div>
+							</section>
+
+							<!-- Section (Colin)-->
+							<section id="colin">
+								<header>
+									<!-- <h2 class="major"><img src="images/selfies/kaijun.png" class="dp-resize"/>
+									&nbsp;Chiang Kai Jun</h2> -->
+								</header>
+								<div class="content">
+									<h2><img src="images/selfies/colin.png" class="dp-resize align-with-text"/>
+									&nbsp;Colin Loh</h2>
+									<p>Specialising in Mechanical Engineering, Colin led the design process from the ideation stage to the final working prototype. Key responsibilities were: drawing up ideation sketches, prototyping 3D models, and designing the housing for both the ReSpeaker and Raspberry Pi.</p>
+								</div>
+							</section>	
+
+							<!-- Section (Kai Jun)-->
+							<section id="kaijun">
+								<header>
+									<!-- <h2 class="major"><img src="images/selfies/kaijun.png" class="dp-resize"/>
+									&nbsp;Chiang Kai Jun</h2> -->
+								</header>
+								<div class="content">
+									<h2><img src="images/selfies/kaijun.png" class="dp-resize align-with-text"/>
+									&nbsp;Chiang Kai Jun</h2>
+									<p>Specialising in Mechanical Engineering, Kai Jun oversaw the production of the spectacle design from start to end: CAD design, 3D print, Spray Paint, Finishing.<br>
+									He also designed the brochure for distribution during the showcase.</p>
+								</div>
+							</section>
+
+							<!-- Section (Tiff)-->
+							<section id="tiff">
+								<header>
+									<!-- <h2 class="major"><img src="images/selfies/kaijun.png" class="dp-resize"/>
+									&nbsp;Chiang Kai Jun</h2> -->
+								</header>
+								<div class="content">
+									<h2><img src="images/selfies/tiff.png" class="dp-resize align-with-text"/>
+									&nbsp;Tiffany Kok</h2>
+									<p>Tiffany is in charge of the finances and purchased the logistics, materials and equipments required for the prototype. She is also the external liason officer and liaised with external parties. In the initial stages, she played a part in the research of current solutions available in the market. Lastly, she also designed the poster for the showcase.</p>
+								</div>
+							</section>
+							<a href="#toc" class="scrolly back-to-top">Back to top</a>
+						</div>
+					</section>
+
+
+			<!-- Section (Special Thanks to)-->
+			<section id="special-thanks">
+				<header>
+					<h2>Acknowledgements</h2>
+				</header>
+				<div class="content">
+					<p>We would like to offer our sincere gratitude to the following highly-esteemed individuals.<p>
+
+					<!-- Section (Prof Teoh)-->
+					<section id="">
+						<header>
+						</header>
+						<div class="content">
+							<h2><h2><img src="images/selfies/tsh.png" class="dp-resize align-with-text"/>&nbsp;&nbsp;Prof Teoh Swee Hin</h2>
+							<p>As our mentor, Prof Teoh has given us his invaluable insights throughout our ReDesign journey. Prof Teoh has helped us in realising certain potentials and problems from a perspective from a wiser and more experienced individual. Lastly, Prof Teoh is constantly around for us to seek advice from, aiding us greatly should we require some professional opinion. </p>
+						</div>
+					</section>	
+
+					<!-- Section (Dr Ho)-->
+					<section id="">
+						<header>
+						</header>
+						<div class="content">
+							<h2><h2><img src="images/selfies/drho.png" class="dp-resize align-with-text"/>&nbsp;&nbsp;Dr Ho Eu Chin</h2>
+							<p>Dr Ho, a Tan Tock Seng Hospital (TTSH) Ear, Nose & Throat (ENT) Senior Consultant, provided us with the insights of the deaf community in Singapore, as well as their needs. He allowed us to identify our most probable targeted audience, who are hard of hearing - the elderly. Regarding the elderly, Dr Ho elucidated us with potential concerns they would have regarding our initial prototype design.</p>
+						</div>
+					</section>	
+					<a href="#toc" class="scrolly back-to-top">Back to top</a>
+				</div>
+			</section>
+
+			<!-- Section (Meet the Team)-->
+			<section id="the-team">
+				<header>
+					<h2 class="major">Meet The Team</h2>
+				</header>
+				<div class="content">
+					<!-- <p>Product description goes here</p> -->
+					<span class="image main"><img src="images/group_1.jpg" alt="" /></span>
+				</div>
+			</section>
+
+			<!-- Copyright -->
+			<div class="copyright">ReVerb 2019&nbsp;&copy;</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- Section-->
+					<!-- <section>
+						<header>
+							<h2>Ultrices erat magna sed condimentum</h2>
+						</header>
+						<div class="content">
+							<p><strong>Integer mollis egestas</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+ -->
+							<!-- Section -->
+								<!-- <section>
+									<header>
+										<h3>Erat aliquam</h3>
+										<p>Vehicula ultrices dolor amet ultricies et condimentum. Magna sed etiam consequat, et lorem adipiscing sed dolor sit amet, consectetur amet do eiusmod tempor incididunt  ipsum suspendisse ultrices gravida.</p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/01.jpg" class="landscape"><img src="images/gallery/thumbs/01.jpg" alt="" /></a>
+											<a href="images/gallery/fulls/02.jpg"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
+											<a href="images/gallery/fulls/03.jpg"><img src="images/gallery/thumbs/03.jpg" alt="" /></a>
+											<a href="images/gallery/fulls/04.jpg" class="landscape"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section> -->
+
+							<!-- Section -->
+								<!-- <section>
+									<header>
+										<h3>Nisl consequat</h3>
+										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam sed facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna finibus nisi nec lacinia ipsum maximus.</p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/05.jpg" class="landscape"><img src="images/gallery/thumbs/05.jpg" alt="" /></a>
+											<a href="images/gallery/fulls/06.jpg"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
+											<a href="images/gallery/fulls/07.jpg"><img src="images/gallery/thumbs/07.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section> -->
+
+							<!-- Section -->
+								<!-- <section>
+									<header>
+										<h3>Lorem gravida</h3>
+										<p>Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare velit lacus, ac varius sed enim lorem ullamcorper dolore.  ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis.</p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/08.jpg" class="portrait"><img src="images/gallery/thumbs/08.jpg" alt="" /></a>
+											<a href="images/gallery/fulls/09.jpg" class="portrait"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+						</div>
+					</section> -->
+
+				<!-- Section -->
+					<!-- <section>
+						<header>
+							<h2>Duis sed adpiscing veroeros amet</h2>
+						</header>
+						<div class="content">
+							<p><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
+							<ul class="actions">
+								<li><a href="#" class="button primary large">Get Started</a></li>
+								<li><a href="#" class="button large">Learn More</a></li>
+							</ul>
+						</div>
+					</section> -->
+
+				<!-- Elements -->
+				<!--
+					<section>
+						<header>
+							<h2>Elements</h2>
+						</header>
+						<div class="content">
+
+							<section>
+								<header>
+									<h3>Text</h3>
+								</header>
+								<div class="content">
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<hr />
+									<h5>Blockquote</h5>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h5>Preformatted</h5>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+  print 'Iteration ' + i;
+  deck.shuffle();
+  i++;
+}
+
+print 'Sorted in ' + i + ' iterations.';</code></pre>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Lists</h3>
+								</header>
+								<div class="content">
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Table</h3>
+								</header>
+								<div class="content">
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Buttons</h3>
+								</header>
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button large">Large</a></li>
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon fa-download">Icon</a></li>
+										<li><a href="#" class="button icon fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Form</h3>
+								</header>
+								<div class="content">
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</div>
+							</section>
+
+						</div>
+					</section>
+				-->
+
+				<!-- Section -->
+					<!-- <section>
+						<header>
+							<h2>Get in touch</h2>
+						</header>
+						<div class="content">
+							<p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
+							<form>
+								<div class="fields">
+									<div class="field half">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="button primary" /></li>
+								</ul>
+							</form>
+						</div>
+						<footer>
+							<ul class="items">
+								<li>
+									<h3>Email</h3>
+									<a href="#">information@untitled.ext</a>
+								</li>
+								<li>
+									<h3>Phone</h3>
+									<a href="#">(000) 000-0000</a>
+								</li>
+								<li>
+									<h3>Address</h3>
+									<span>1234 Somewhere Road, Nashville, TN 00000</span>
+								</li>
+								<li>
+									<h3>Elsewhere</h3>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="icon fa-codepen"><span class="label">Codepen</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</footer>
+					</section>
+ -->
+				
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
