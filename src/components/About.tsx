@@ -1,8 +1,8 @@
-import profilePic from '../assets/images/about/profilePic.jpg'
-import AboutData from '../data/about'
+import profilePic from "../assets/images/about/profilePic.jpg";
+import AboutData from "../data/about";
 
 const About = (): JSX.Element => {
-  const sectionName = 'About Me'
+  const sectionName = "About Me";
   const hello = AboutData.descriptionHeader;
   const about = AboutData.description;
 
@@ -16,10 +16,7 @@ const About = (): JSX.Element => {
           <div className="col-md-4 mb-5 center">
             <div className="polaroid">
               <span style={{ cursor: "auto" }}>
-                <img
-                  src={profilePic}
-                  alt="Avatar placeholder"
-                />
+                <img src={profilePic} alt="Avatar placeholder" />
               </span>
             </div>
           </div>
@@ -50,9 +47,9 @@ const About = (): JSX.Element => {
                   className="card-body font-trebuchet text-justify ml-3 mr-3"
                   style={{
                     height: "auto",
-                    fontSize: "132%",
-                    lineHeight: "200%",
-                    padding: '20px'
+                    fontSize: "1.32rem",
+                    lineHeight: "2em",
+                    padding: "20px",
                   }}
                 >
                   <br />
@@ -68,6 +65,6 @@ const About = (): JSX.Element => {
       </div>
     </section>
   );
-}
+};
 
 export default About;

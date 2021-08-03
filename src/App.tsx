@@ -1,4 +1,4 @@
-import './App.scss';
+import "./App.scss";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
@@ -15,6 +15,6 @@ const App = (): JSX.Element => {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,13 +1,13 @@
-import {useState} from 'react';
+import { useState } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
-import WorkExperiences from '../data/workExperiences'
+import WorkExperiences from "../data/workExperiences";
 import WorkExperienceModal from "./WorkExperienceModal";
-import IWorkExperience from '../interfaces/workExperiences';
+import IWorkExperience from "../interfaces/workExperiences";
 
 const Experience = (): JSX.Element => {
   const [modalData, setModalData] = useState<IWorkExperience>(null);
@@ -16,53 +16,61 @@ const Experience = (): JSX.Element => {
   const showDetailsModal = (work: IWorkExperience): void => {
     setModalData(work);
     setDetailsModalShow(true);
-  }
+  };
 
   const closeDetailsModal = (): void => {
     setDetailsModalShow(false);
-  }
+  };
 
-  const sectionName = 'Work Experiences'
-  const work = WorkExperiences.slice().reverse().map((work, i) => {
-    const tech = work.technologies.map((technology, i) => {
+  const sectionName = "Work Experiences";
+  const work = WorkExperiences.slice()
+    .reverse()
+    .map((work, i) => {
+      const tech = work.technologies.map((technology, i) => {
+        return (
+          <Badge className="experience-badge mr-2 mb-2" key={i}>
+            {technology.label}
+          </Badge>
+        );
+      });
       return (
-        <Badge className="experience-badge mr-2 mb-2" key={i}>
-          {technology.label}
-        </Badge>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--item vertical-timeline-element"
+          date={`${work.startDate} - ${work.endDate ?? "Present"}`}
+          iconStyle={{
+            background: "#AE944F", // circle colour
+            color: "#fff", // lines colour
+            textAlign: "center",
+          }}
+          contentStyle={{
+            cursor: "pointer",
+          }}
+          icon={
+            <i
+              className={`${
+                work.endDate ? "fas fa-check" : "fas fa-hourglass-start"
+              } experience-icon`}
+            ></i>
+          }
+          key={i}
+          onTimelineElementClick={() => showDetailsModal(work)}
+        >
+          <h3
+            className="vertical-timeline-element-title"
+            style={{ textAlign: "left" }}
+          >
+            {work.role}
+          </h3>
+          <h5
+            className="vertical-timeline-element-subtitle"
+            style={{ textAlign: "left" }}
+          >
+            {`${work.organisation} - ${work.location}`}
+          </h5>
+          <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
+        </VerticalTimelineElement>
       );
     });
-    return (
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date={`${work.startDate} - ${work.endDate ?? 'Present'}`}
-        iconStyle={{
-          background: "#AE944F", // circle colour
-          color: "#fff", // lines colour
-          textAlign: "center",
-        }}
-        contentStyle={{
-          cursor: 'pointer'
-        }}
-        icon={<i className={`${work.endDate ? 'fas fa-check' : 'fas fa-hourglass-start'} experience-icon`}></i>}
-        key={i}
-        onTimelineElementClick={() => showDetailsModal(work)}
-      >
-        <h3
-          className="vertical-timeline-element-title"
-          style={{ textAlign: "left" }}
-        >
-          {work.role}
-        </h3>
-        <h5
-          className="vertical-timeline-element-subtitle"
-          style={{ textAlign: "left" }}
-        >
-          {`${work.organisation} - ${work.location}`}
-        </h5>
-        <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
-      </VerticalTimelineElement>
-    );
-  });
 
   return (
     <section id="resume" className="pb-5">
@@ -76,7 +84,7 @@ const Experience = (): JSX.Element => {
         </div>
       </div>
       <div className="col-md-8 mx-auto">
-        <VerticalTimeline>
+        <VerticalTimeline className="pb-2-important">
           {work}
           <VerticalTimelineElement
             iconStyle={{
@@ -87,16 +95,19 @@ const Experience = (): JSX.Element => {
             icon={
               <i className="fas fa-fist-raised mx-auto experience-icon"></i>
             }
+            className="vertical-timeline-element"
           />
         </VerticalTimeline>
-        {modalData && <WorkExperienceModal
-          show={detailsModalShow}
-          onHide={closeDetailsModal}
-          data={modalData}
-        />}
+        {modalData && (
+          <WorkExperienceModal
+            show={detailsModalShow}
+            onHide={closeDetailsModal}
+            data={modalData}
+          />
+        )}
       </div>
     </section>
   );
-}
+};
 
 export default Experience;
