@@ -21,8 +21,8 @@ const WorkExperienceModal = (props: IProps): JSX.Element => {
         <li className="list-inline-item mx-3" key={i}>
           <span>
             <div className="text-center">
-              <i className={tech.icon} style={{ fontSize: "3em" }}>
-                <p className="text-center" style={{ fontSize: ".3em" }}>
+              <i className={`${tech.icon} tech-icon`}>
+                <p className="text-center tech-icon-label">
                   {tech.label}
                 </p>
               </i>
