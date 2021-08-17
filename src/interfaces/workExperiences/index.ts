@@ -1,5 +1,5 @@
-import IAnchor from "../shared/IAnchor";
-import IIcon from "../shared/IIcon";
+import IAnchor from '../shared/IAnchor';
+import IIcon from '../shared/IIcon';
 
 export default interface IWorkExperience {
   organisation: string;

@@ -1,4 +1,4 @@
-import ISocial from "./ISocial";
+import ISocial from './ISocial';
 
 export default interface IPortfolioBasicInfo {
   name: string;

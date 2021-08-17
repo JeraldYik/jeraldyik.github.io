@@ -1,12 +1,12 @@
-import IAnchor from "../shared/IAnchor";
+import IAnchor from '../shared/IAnchor';
+import IIcon from '../shared/IIcon';
 
 export default interface IProject {
   name: string;
-  location?: string;
+  location: string;
   startDate: string;
   endDate?: string;
   description: Array<{ [key: string]: Array<string> } | string>;
   anchors?: Array<IAnchor>;
-  image?: string;
-  technologies?: Array<string>;
+  technologies?: Array<IIcon>;
 }
