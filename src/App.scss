@@ -446,6 +446,28 @@ footer a:focus {
   width: 16rem;
 }
 
+.vertical-timeline-element-title {
+  text-align: left;
+  display: inline-block;
+  padding-right: 25px;
+  word-wrap: normal;
+}
+
+.vertical-timeline-element-emoji {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.vertical-timeline-element {
+  margin: 4rem 0;
+}
+
+.vertical-timeline-element-content {
+  padding: 1.5rem !important;
+  display: relative;
+}
+
 @media only screen and (max-width: 1170px) {
   .experience-icon {
     font-size: 2rem;

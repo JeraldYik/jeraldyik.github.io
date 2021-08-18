@@ -13,7 +13,7 @@ const Header = (): JSX.Element => {
 
   return (
     <header id='home' style={{ display: 'block', height: '100vh', maxHeight: '800px' }}>
-      <div id='work-in-progress-pill'>Work in progress</div>
+      {/* <div id='work-in-progress-pill'>Work in progress</div> */}
       <div className='row aligner' style={{ display: 'block' }}>
         <div className='col-md-12'>
           <div className='intro-container'>

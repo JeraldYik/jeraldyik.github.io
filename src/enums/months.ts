@@ -1,6 +1,6 @@
 enum Month {
   JANURARY = 'Jan',
-  FEBRUARY = 'Feburary',
+  FEBRUARY = 'Feb',
   MARCH = 'Mar',
   APRIL = 'Apr',
   MAY = 'May',

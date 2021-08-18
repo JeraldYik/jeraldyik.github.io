@@ -80,6 +80,10 @@ const WorkExperiences: Array<IWorkExperience> = [
         icon: 'devicon-express-original'
       },
       {
+        label: 'Docker',
+        icon: 'devicon-docker-plain'
+      },
+      {
         label: 'MongoDB',
         icon: 'devicon-mongodb-plain'
       },
@@ -91,7 +95,8 @@ const WorkExperiences: Array<IWorkExperience> = [
         label: 'RESTFul API'
       },
       {
-        label: 'SocketIO'
+        label: 'SocketIO',
+        icon: 'devicon-socketio-original'
       },
       {
         label: 'Expo'
@@ -180,6 +185,10 @@ const WorkExperiences: Array<IWorkExperience> = [
       {
         label: 'ReactJS',
         icon: 'devicon-react-original'
+      },
+      {
+        label: 'Javascript',
+        icon: 'devicon-javascript-plain'
       },
       {
         label: 'Raspberry Pi',

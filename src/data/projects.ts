@@ -12,16 +12,45 @@ const Projects: Array<IProject> = [
     ],
     technologies: [
       {
-        label: 'ReactJS', 
-        icon: ''
+        label: 'ReactJS',
+        icon: 'devicon-react-original'
       },
       {
         label: 'Sass',
-        icon: ''
+        icon: 'devicon-sass-original'
       },
       {
         label: 'Bootstrap',
-        icon: ''
+        icon: 'devicon-bootstrap-plain'
+      }
+    ]
+  },
+  {
+    name: 'EE6108 Computer Networks Routing Algorithmns Implementation',
+    location: 'NTU, Singapore',
+    startDate: `${Month.SEPTEMBER} 2020`,
+    endDate: `${Month.OCTOBER} 2020`,
+    description: [
+      "Implemented Bellman-Ford Algorithm & Dijkstra's Algorithm using Typescript for a school Master's module",
+      'Complete with full implementation and allowing user input of graphs',
+      'Report and complete README.md included',
+      'Coding implementation constitutes 30% of overall grade',
+      'Achieved A- for this module'
+    ],
+    anchors: [
+      {
+        label: 'Repository',
+        link: 'https://github.com/JeraldYik/EE6108'
+      }
+    ],
+    technologies: [
+      {
+        label: 'Typescript',
+        icon: 'devicon-typescript-plain'
+      },
+      {
+        label: 'Algorithms',
+        icon: 'devicon-thealgorithms-plain'
       }
     ]
   },
@@ -29,6 +58,7 @@ const Projects: Array<IProject> = [
     name: 'Renaissance Capstone Project (Final Year Project)',
     location: 'NTU, Singapore',
     startDate: `${Month.JUNE} 2020`,
+    endDate: `${Month.MAY} 2021`,
     description: [
       'Responsible for implementing the infrastructure and logic on the topic of Differential Privacy on a CNN model that utilises peer-to-peer federated learning for training',
       'Conducted Final Presentation to a panel of course heads, spearheading technical explanations and discussions of the implementations and underlying concepts',
@@ -37,13 +67,21 @@ const Projects: Array<IProject> = [
     anchors: [
       {
         label: 'Repository',
-        link: 'https://github.com/JeraldYik/rcp-colab-notebooks'
+        link: 'https://github.com/JeraldYik/rcp-notebooks'
       }
     ],
     technologies: [
       {
         label: 'Python',
-        icon: ''
+        icon: 'devicon-python-plain'
+      },
+      {
+        label: 'Numpy',
+        icon: 'devicon-numpy-original'
+      },
+      {
+        label: 'Tensorflow',
+        icon: 'devicon-tensorflow-original'
       },
       {
         label: 'Deep Learning',
@@ -59,15 +97,15 @@ const Projects: Array<IProject> = [
       },
       {
         label: 'Jupyter',
-        icon: ''
+        icon: 'devicon-jupyter-plain'
       },
       {
         label: 'AWS',
-        icon: ''
+        icon: 'devicon-amazonwebservices-original'
       },
       {
         label: 'GCP',
-        icon: ''
+        icon: 'devicon-googlecloud-plain'
       }
     ]
   },
@@ -90,23 +128,23 @@ const Projects: Array<IProject> = [
     technologies: [
       {
         label: 'Typescript',
-        icon: ''
+        icon: 'devicon-typescript-plain'
       },
       {
         label: 'ReactJS',
-        icon: ''
+        icon: 'devicon-react-original'
       },
       {
         label: 'NextJS',
-        icon: ''
+        icon: 'devicon-nextjs-original'
       },
       {
-        label: 'Semantic UI',
-        icon: ''
+        label: 'MaterialUI',
+        icon: 'devicon-materialui-plain'
       },
       {
         label: 'Google Developer',
-        icon: ''
+        icon: 'devicon-google-plain'
       },
       {
         label: 'API',
@@ -133,7 +171,7 @@ const Projects: Array<IProject> = [
     technologies: [
       {
         label: 'Typescript',
-        icon: ''
+        icon: 'devicon-typescript-plain'
       },
       {
         label: 'Telegram',
@@ -150,7 +188,9 @@ const Projects: Array<IProject> = [
     startDate: `${Month.FEBRUARY} 2021`,
     endDate: `${Month.APRIL} 2021`,
     location: 'NTU, Singapore',
-    description: ['Completed a project in Java to implement a booking system, with full implementation of serialisation/de-seralisation, and UDP socket communication.'],
+    description: [
+      'Completed a project in Java to implement a booking system, with full implementation of serialisation/de-seralisation, and UDP socket communication.'
+    ],
     anchors: [
       {
         label: 'Repository',
@@ -160,11 +200,11 @@ const Projects: Array<IProject> = [
     technologies: [
       {
         label: 'Java',
-        icon: ''
+        icon: 'devicon-java-plain'
       },
       {
         label: 'Socket Programming',
-        icon: ''
+        icon: 'devicon-socketio-original'
       },
       {
         label: 'Serialisation',
@@ -198,11 +238,34 @@ const Projects: Array<IProject> = [
       },
       {
         label: 'ReactJS',
-        icon: ''
+        icon: 'devicon-react-original'
       },
       {
         label: 'Javascript',
-        icon: ''
+        icon: 'devicon-javascript-plain'
+      }
+    ]
+  },
+  {
+    name: 'CS186 Database Systems Complete Database Implementation',
+    location: 'UCB, Berkeley',
+    startDate: `${Month.JANURARY} 2020`,
+    endDate: `${Month.MAY} 2020`,
+    description: [
+      'Build up a database from scratch and implemented various critical features of a database',
+      'These include B+ trees, Joins & Query Optimisation, Locking & Concurrency, as well as Logging & Crash Recovery',
+      'All necessary READMEs and implementations are in the repository'
+    ],
+    anchors: [
+      {
+        label: 'Repository',
+        link: 'https://github.com/JeraldYik/csw186_proj5'
+      }
+    ],
+    technologies: [
+      {
+        label: 'Java',
+        icon: 'devicon-java-plain'
       }
     ]
   },
@@ -218,11 +281,15 @@ const Projects: Array<IProject> = [
     technologies: [
       {
         label: 'Python',
-        icon: ''
+        icon: 'devicon-python-plain'
       },
       {
         label: 'Jupyter',
-        icon: ''
+        icon: 'devicon-jupyter-plain'
+      },
+      {
+        label: 'Numpy',
+        icon: 'devicon-numpy-original'
       },
       {
         label: 'Pandas',
@@ -246,29 +313,29 @@ const Projects: Array<IProject> = [
     anchors: [
       {
         label: 'E-Pamphlet',
-        link: 'https://jeraldyik.github.io/redesign.pamphlet/index.html'
+        link: 'https://jeraldyik.github.io/redesign-pamphlet/index.html'
       }
     ],
     technologies: [
       {
         label: 'HTML',
-        icon: ''
+        icon: 'devicon-html5-plain'
       },
       {
         label: 'CSS',
-        icon: ''
+        icon: 'devicon-css3-plain'
       },
       {
         label: 'Javscript',
-        icon: ''
+        icon: 'devicon-javascript-plain'
       },
       {
         label: 'Raspberry Pi',
-        icon: ''
+        icon: 'devicon-raspberrypi-line'
       },
       {
         label: 'Python',
-        icon: ''
+        icon: 'devicon-python-plain'
       }
     ]
   },
@@ -285,12 +352,20 @@ const Projects: Array<IProject> = [
     technologies: [
       {
         label: 'Python',
-        icon: ''
+        icon: 'devicon-python-plain'
+      },
+      {
+        label: 'Jupyter',
+        icon: 'devicon-jupyter-plain'
+      },
+      {
+        label: 'Numpy',
+        icon: 'devicon-numpy-original'
       },
       {
         label: 'Machine Learning',
         icon: ''
-      },
+      }
     ]
   },
   {
@@ -301,14 +376,11 @@ const Projects: Array<IProject> = [
     description: [
       'Created a Recycling station Android application from scratch for a Software Engineering Module',
       'Utilised various API, including Google Maps, National Environmental Agency (NEA)',
-      {
-        'Application is able to:': [
-          "Determine type of recyclables through a 'checkout' system",
-          'Find nearest recycling station to user based on type of recyclables obtained',
-          'Provide users with the nearest route from current location to recycling station',
-          'Communicate with user via a chatbot that uses IBM Watson API'
-        ]
-      }
+      'Application is able to:',
+      "Determine type of recyclables through a 'checkout' system",
+      'Find nearest recycling station to user based on type of recyclables obtained',
+      'Provide users with the nearest route from current location to recycling station',
+      'Communicate with user via a chatbot that uses IBM Watson API'
     ],
     anchors: [
       {
@@ -323,7 +395,7 @@ const Projects: Array<IProject> = [
     technologies: [
       {
         label: 'Java',
-        icon: ''
+        icon: 'devicon-java-plain'
       },
       {
         label: 'Object-Oriented Programming',
@@ -336,7 +408,7 @@ const Projects: Array<IProject> = [
       {
         label: 'Natural Language Progressing',
         icon: ''
-      },
+      }
     ]
   },
   {
@@ -352,16 +424,16 @@ const Projects: Array<IProject> = [
     technologies: [
       {
         label: 'Javascript',
-        icon: ''
+        icon: 'devicon-javascript-plain'
       },
       {
         label: 'Python',
-        icon: ''
+        icon: 'devicon-python-plain'
       },
       {
         label: 'NodeJS',
-        icon: ''
-      },
+        icon: 'devicon-nodejs-plain'
+      }
     ]
   }
 ];

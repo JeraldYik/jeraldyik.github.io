@@ -1,10 +1,6 @@
 import { Modal } from 'react-bootstrap';
 import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css';
-import IWorkExperience from '../interfaces/workExperiences';
-import IProject from '../interfaces/projects';
-import IEducation from '../interfaces/education';
-
-type Data = IWorkExperience | IProject | IEducation
+import { Data } from './Timeline';
 
 interface IProps {
   data: Data;
@@ -12,49 +8,42 @@ interface IProps {
   show: boolean;
 }
 
-const WorkExperienceModal = (props: IProps): JSX.Element => {
-  const header = (("organisation" in props.data) && props.data.organisation) || (("name" in props.data) && props.data.name);
-  const subHeader = (("role" in props.data) && props.data.role) || (("location" in props.data) && props.data.location);
+const TimelineModal = (props: IProps): JSX.Element => {
+  const header = ('organisation' in props.data && props.data.organisation) || ('name' in props.data && props.data.name);
+  const subHeader = ('role' in props.data && props.data.role) || ('location' in props.data && props.data.location);
   const description = props.data.description.map((desc, i) => {
-    if (typeof desc === 'string') return <li key={i}>{desc}</li>;
-    const innerList = Object.values(desc).map((inner, j) => {
-      <li key={j}>{inner}</li>
-    })
-    return (
-      <>
-        <li key={i}>{desc}</li>
-        <ul key={i}>
-          {innerList}
-        </ul>
-      </>
-    )
+    return <li key={i}>{desc}</li>;
   });
 
-  const tech = ("technologies" in props.data) && props.data.technologies.map((tech, i) => {
-    return (
-      tech.icon && (
-        <li className='list-inline-item mx-3' key={i}>
-          <span>
-            <div className='text-center'>
-              <i className={`${tech.icon} tech-icon`}>
-                <p className='text-center tech-icon-label'>{tech.label}</p>
-              </i>
-            </div>
-          </span>
+  const tech =
+    'technologies' in props.data &&
+    props.data.technologies.map((tech, i) => {
+      return (
+        tech.icon && (
+          <li className='list-inline-item mx-3' key={i}>
+            <span>
+              <div className='text-center'>
+                <i className={`${tech.icon} tech-icon`}>
+                  <p className='text-center tech-icon-label'>{tech.label}</p>
+                </i>
+              </div>
+            </span>
+          </li>
+        )
+      );
+    });
+
+  const anchors =
+    'anchors' in props.data &&
+    props.data.anchors.map((anchor, i) => {
+      return (
+        <li key={i}>
+          <a href={anchor.link} target='_blank' rel='noopener noreferrer'>
+            {anchor.label}
+          </a>
         </li>
-      )
-    );
-  });
-
-  const anchors = ("anchors" in props.data) && props.data.anchors.map((anchor, i) => {
-    return (
-      <li key={i}>
-        <a href={anchor.link} target='_blank' rel='noopener noreferrer'>
-          {anchor.label}
-        </a>
-      </li>
-    );
-  });
+      );
+    });
 
   return (
     <Modal {...props} size='lg' aria-labelledby='contained-modal-title-vcenter' centered className='modal-inside'>
@@ -69,10 +58,12 @@ const WorkExperienceModal = (props: IProps): JSX.Element => {
         <div className='col-md-10 mx-auto modal-section'>
           <ul className='modal-description'>{description}</ul>
         </div>
-        {anchors && <div className='col-md-10 mx-auto modal-section modal-section-last-item'>
-          <h5>Navigate to these links below to find out more!</h5>
-          <ul className='modal-description'>{anchors}</ul>
-        </div>}
+        {anchors && (
+          <div className='col-md-10 mx-auto modal-section modal-section-last-item'>
+            <h5>Navigate to these links below to find out more!</h5>
+            <ul className='modal-description'>{anchors}</ul>
+          </div>
+        )}
         <div className='col-md-10 mx-auto'>
           <div className='col-md-12 text-center'>
             <ul className='list-inline mx-auto'>{tech}</ul>
@@ -83,4 +74,4 @@ const WorkExperienceModal = (props: IProps): JSX.Element => {
   );
 };
 
-export default WorkExperienceModal;
+export default TimelineModal;
