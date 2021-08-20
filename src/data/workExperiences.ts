@@ -50,8 +50,16 @@ const WorkExperiences: Array<IWorkExperience> = [
         link: 'https://unifier.affinidi.com/'
       },
       {
-        label: 'My own Verifiable Credential!',
+        label: 'Letter of Recommendation',
+        link: 'affinidi-letter-of-recommendation.pdf'
+      },
+      {
+        label: 'My very own Intern Verifiable Credential!',
         link: 'https://affinidi.org/3lA4K0X'
+      },
+      {
+        label: 'My kudos Verifiable Credential from Supervisor!',
+        link: 'https://affinidi.org/3k9kp4N'
       }
     ]
   },
@@ -165,7 +173,7 @@ const WorkExperiences: Array<IWorkExperience> = [
       },
       {
         label: 'Letter of Recommendation',
-        link: 'letter-of-recommendation.pdf'
+        link: 'govtech-letter-of-recommendation.pdf'
       }
     ]
   },
