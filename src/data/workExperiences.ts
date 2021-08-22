@@ -7,6 +7,7 @@ const WorkExperiences: Array<IWorkExperience> = [
     location: 'Singapore',
     role: 'Software Engineering (QA Automation) Intern',
     startDate: `${Month.MAY} 2021`,
+    endDate: `${Month.AUGUST} 2021`,
     technologies: [
       {
         label: 'Typescript',
@@ -66,12 +67,13 @@ const WorkExperiences: Array<IWorkExperience> = [
   {
     organisation: 'UKEI Co-living',
     location: 'Hong Kong SAR',
-    role: 'Backend Lead',
+    role: 'Backend Lead, Full-Stack Developer',
     startDate: `${Month.APRIL} 2021`,
     description: [
       'Responsible for the Backend operations of the application',
       'Established backend infrastructure from ground up',
       'Liase frequently with Tech Lead and front-end team to sync up criterias and workflow',
+      'Contributed to front-end and full-stack efforts',
       'Working concurrently with full-time internship stint, and am successful in managing time efficiently to contribute to both projects at maximum potential'
     ],
     technologies: [
@@ -111,7 +113,11 @@ const WorkExperiences: Array<IWorkExperience> = [
       },
       {
         label: 'Cron'
-      }
+      },
+      {
+        label: 'React Native',
+        icon: 'devicon-react-original'
+      },
     ],
     anchors: [
       {

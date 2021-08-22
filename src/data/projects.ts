@@ -23,6 +23,12 @@ const Projects: Array<IProject> = [
         label: 'Bootstrap',
         icon: 'devicon-bootstrap-plain'
       }
+    ],
+    anchors: [
+      {
+        label: 'Repository',
+        link: 'https://github.com/JeraldYik/jeraldyik.github.io'
+      }
     ]
   },
   {
