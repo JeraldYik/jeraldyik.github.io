@@ -58,7 +58,7 @@ const TimelineModal = (props: IProps): JSX.Element => {
         <div className='col-md-10 mx-auto modal-section'>
           <ul className='modal-description'>{description}</ul>
         </div>
-        {anchors && (
+        {anchors.length > 0 && (
           <div className='col-md-10 mx-auto modal-section modal-section-last-item'>
             <h5>Navigate to these links below to find out more!</h5>
             <ul className='modal-description'>{anchors}</ul>
