@@ -3,6 +3,38 @@ import Month from '../enums/months';
 
 const WorkExperiences: Array<IWorkExperience> = [
   {
+    organisation: 'Open Government Products',
+    location: 'Singapore',
+    role: 'Software Engineering Intern',
+    startDate: `${Month.NOVEMBER} 2021`,
+    technologies: [
+      {
+        label: 'Typescript',
+        icon: 'devicon-typescript-plain'
+      },
+      {
+        label: 'AWS',
+        icon: 'devicon-amazonwebservices-original'
+      },
+      {
+        label: 'Serverless'
+      },
+      {
+        label: 'Postgres',
+        icon: 'devicon-postgresql-plain'
+      },
+      {
+        label: 'Sequelize',
+        icon: 'devicon-sequelize-plain'
+      },
+      {
+        label: 'Zendesk'
+      }
+    ],
+    description: ['Working on Covid Case Management System Flows', 'Using Zendesk as a SaaS for ticket management', 'In Progress!'],
+    anchors: []
+  },
+  {
     organisation: 'Affinidi',
     location: 'Singapore',
     role: 'Software Engineering (QA Automation) Intern',
@@ -117,7 +149,7 @@ const WorkExperiences: Array<IWorkExperience> = [
       {
         label: 'React Native',
         icon: 'devicon-react-original'
-      },
+      }
     ],
     anchors: [
       {
