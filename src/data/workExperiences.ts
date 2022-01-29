@@ -29,10 +29,36 @@ const WorkExperiences: Array<IWorkExperience> = [
       },
       {
         label: 'Zendesk'
+      },
+      {
+        label: 'NestJS',
+        icon: 'devicon-nestjs-plain'
       }
     ],
-    description: ['Working on Covid Case Management System Flows', 'Using Zendesk as a SaaS for ticket management', 'In Progress!'],
-    anchors: []
+    description: [
+      'Worked on Covid Case Management System Flows',
+      'Used Zendesk as a SaaS for ticket management',
+      'Worked on a couple of Hackathon projects',
+      'In Progress!'
+    ],
+    anchors: [
+      {
+        label: 'Hackathon project: SpotlightSG website',
+        link: 'http://spotlight.hack.gov.sg/'
+      },
+      {
+        label: 'Hackathon project: SpotlightSG repository',
+        link: 'https://github.com/opengovsg/spotlightsg'
+      },
+      {
+        label: 'Hackathon project: QuizSG website',
+        link: 'https://quiz.hack.gov.sg/'
+      },
+      {
+        label: 'Hackathon project: QuizSG repository',
+        link: 'https://github.com/opengovsg/quizSG'
+      }
+    ]
   },
   {
     organisation: 'Affinidi',

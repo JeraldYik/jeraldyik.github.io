@@ -11,7 +11,7 @@ const Education: Array<IEducation> = [
       'B.Eng (with Hons) for Renaissance Engineering Programme (REP) specialising in Computer Science (GPA 4.83/5, 1st Class)',
       'MSc in Science & Technology Management'
     ],
-    anchors: [ 
+    anchors: [
       {
         label: 'Official REP Website',
         link: 'https://www.ntu.edu.sg/admissions/undergraduate/premier-scholar-programmes/renaissance-engineering-programme'
