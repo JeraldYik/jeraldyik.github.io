@@ -36,15 +36,18 @@ const WorkExperiences: Array<IWorkExperience> = [
       }
     ],
     description: [
-      'Worked on Covid Case Management System Flows',
+      'Worked on Covid Operations (Case Management System)',
       'Used Zendesk as a SaaS for ticket management',
       'Worked on a couple of Hackathon projects',
-      'In Progress!'
     ],
     anchors: [
       {
         label: 'Hackathon project: SpotlightSG website',
         link: 'http://spotlight.hack.gov.sg/'
+      },
+      {
+        label: 'Hackathon project: SpotlightSG writeup',
+        link: 'https://www.open.gov.sg/hackathon/2022/spotlight'
       },
       {
         label: 'Hackathon project: SpotlightSG repository',
@@ -53,6 +56,10 @@ const WorkExperiences: Array<IWorkExperience> = [
       {
         label: 'Hackathon project: QuizSG website',
         link: 'https://quiz.hack.gov.sg/'
+      },
+      {
+        label: 'Hackathon project: QuizSG writeup',
+        link: 'https://www.open.gov.sg/hackathon/2022/quizsg'
       },
       {
         label: 'Hackathon project: QuizSG repository',
@@ -112,14 +119,14 @@ const WorkExperiences: Array<IWorkExperience> = [
         label: 'Letter of Recommendation',
         link: 'affinidi-letter-of-recommendation.pdf'
       },
-      {
-        label: 'My very own Intern Verifiable Credential!',
-        link: 'https://affinidi.org/3lA4K0X'
-      },
-      {
-        label: 'My kudos Verifiable Credential from Supervisor!',
-        link: 'https://affinidi.org/3k9kp4N'
-      }
+      // {
+      //   label: 'My very own Intern Verifiable Credential!',
+      //   link: 'https://affinidi.org/3lA4K0X'
+      // },
+      // {
+      //   label: 'My kudos Verifiable Credential from Supervisor!',
+      //   link: 'https://affinidi.org/3k9kp4N'
+      // }
     ]
   },
   {
@@ -160,17 +167,11 @@ const WorkExperiences: Array<IWorkExperience> = [
         icon: 'devicon-redis-plain'
       },
       {
-        label: 'RESTFul API'
-      },
-      {
-        label: 'SocketIO',
+        label: 'SocketIo',
         icon: 'devicon-socketio-original'
       },
       {
         label: 'Expo'
-      },
-      {
-        label: 'Cron'
       },
       {
         label: 'React Native',
