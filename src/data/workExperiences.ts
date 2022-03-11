@@ -1,7 +1,7 @@
 import IWorkExperience from '../interfaces/workExperiences';
 import Month from '../enums/months';
 
-const WorkExperiences: Array<IWorkExperience> = [
+const WorkExperiences: IWorkExperience[] = [
   {
     organisation: 'Open Government Products',
     location: 'Singapore',
@@ -38,7 +38,7 @@ const WorkExperiences: Array<IWorkExperience> = [
     description: [
       'Worked on Covid Operations (Case Management System)',
       'Used Zendesk as a SaaS for ticket management',
-      'Worked on a couple of Hackathon projects',
+      'Worked on a couple of Hackathon projects'
     ],
     anchors: [
       {
@@ -118,7 +118,7 @@ const WorkExperiences: Array<IWorkExperience> = [
       {
         label: 'Letter of Recommendation',
         link: 'affinidi-letter-of-recommendation.pdf'
-      },
+      }
       // {
       //   label: 'My very own Intern Verifiable Credential!',
       //   link: 'https://affinidi.org/3lA4K0X'

@@ -1,7 +1,7 @@
 import IProject from '../interfaces/projects';
 import Month from '../enums/months';
 
-const Projects: Array<IProject> = [
+const Projects: IProject[] = [
   {
     name: 'Personal Portfolio Site',
     startDate: `${Month.MAY} 2019`,

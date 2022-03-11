@@ -1,6 +1,6 @@
-import { useMemo } from 'react';
-import Typical from 'react-typical';
 import BasicInfo from '../data/basicInfo';
+import Typical from 'react-typical';
+import { useMemo } from 'react';
 
 const Header = (): JSX.Element => {
   const name = BasicInfo.name;
@@ -13,7 +13,6 @@ const Header = (): JSX.Element => {
 
   return (
     <header id='home' style={{ display: 'block', height: '100vh', maxHeight: '800px' }}>
-      {/* <div id='work-in-progress-pill'>Work in progress</div> */}
       <div className='row aligner' style={{ display: 'block' }}>
         <div className='col-md-12'>
           <div className='intro-container'>

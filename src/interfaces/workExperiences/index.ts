@@ -7,7 +7,7 @@ export default interface IWorkExperience {
   role: string;
   startDate: string;
   endDate?: string;
-  technologies: Array<IIcon>;
-  description: Array<string>;
-  anchors: Array<IAnchor>;
+  technologies: IIcon[];
+  description: string[];
+  anchors: IAnchor[];
 }

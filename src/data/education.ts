@@ -1,7 +1,7 @@
 import IEducation from '../interfaces/education';
 import Month from '../enums/months';
 
-const Education: Array<IEducation> = [
+const Education: IEducation[] = [
   {
     name: 'Nanyang Technological University (NTU)',
     location: 'Singapore',

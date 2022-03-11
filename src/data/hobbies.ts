@@ -1,6 +1,6 @@
 import IHobby from '../interfaces/hobbies';
 
-const Hobbies: Array<IHobby> = [
+const Hobbies: IHobby[] = [
   {
     name: 'Coding',
     image: '',

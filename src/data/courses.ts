@@ -1,6 +1,6 @@
 import ICourse from '../interfaces/courses';
 
-const Courses: Array<ICourse> = [
+const Courses: ICourse[] = [
   {
     code: 'EE 6108',
     name: 'Computer Networks',

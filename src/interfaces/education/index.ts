@@ -5,6 +5,6 @@ export default interface IEducation {
   location: string;
   startDate: string;
   endDate?: string;
-  description: Array<string>;
-  anchors?: Array<IAnchor>;
+  description: string[];
+  anchors?: IAnchor[];
 }

@@ -1,6 +1,6 @@
+import { Data } from './Timeline';
 import { Modal } from 'react-bootstrap';
 import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css';
-import { Data } from './Timeline';
 
 interface IProps {
   data: Data;
@@ -17,7 +17,7 @@ const TimelineModal = (props: IProps): JSX.Element => {
 
   const tech =
     'technologies' in props.data &&
-    props.data.technologies.map((tech, i) => {
+    props.data.technologies!.map((tech, i) => {
       return (
         tech.icon && (
           <li className='list-inline-item mx-3' key={i}>
@@ -35,7 +35,7 @@ const TimelineModal = (props: IProps): JSX.Element => {
 
   const anchors =
     'anchors' in props.data &&
-    props.data.anchors.map((anchor, i) => {
+    props.data.anchors!.map((anchor, i) => {
       return (
         <li key={i}>
           <a href={anchor.link} target='_blank' rel='noopener noreferrer'>
@@ -58,7 +58,7 @@ const TimelineModal = (props: IProps): JSX.Element => {
         <div className='col-md-10 mx-auto modal-section'>
           <ul className='modal-description'>{description}</ul>
         </div>
-        {anchors.length > 0 && (
+        {Array.isArray(anchors) && anchors.length > 0 && (
           <div className='col-md-10 mx-auto modal-section modal-section-last-item'>
             <h5>Navigate to these links below to find out more!</h5>
             <ul className='modal-description'>{anchors}</ul>

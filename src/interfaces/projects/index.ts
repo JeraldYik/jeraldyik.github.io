@@ -6,7 +6,7 @@ export default interface IProject {
   location: string;
   startDate: string;
   endDate?: string;
-  description: Array<string>;
-  anchors?: Array<IAnchor>;
-  technologies?: Array<IIcon>;
+  description: string[];
+  anchors?: IAnchor[];
+  technologies?: IIcon[];
 }

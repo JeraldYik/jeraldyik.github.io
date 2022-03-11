@@ -1,17 +1,17 @@
-import { useState, useEffect } from 'react';
+import Badge from 'react-bootstrap/Badge';
+import Education from '../data/education';
+import IDropdown from '../interfaces/shared/IDropdown';
+import IEducation from '../interfaces/education';
+import IProject from '../interfaces/projects';
+import IWorkExperience from '../interfaces/workExperiences';
+import Projects from '../data/projects';
+import TimelineCategory from '../enums/timelineCategories';
+import TimelineModal from './TimelineModal';
+import WorkExperiences from '../data/workExperiences';
+import { MultiSelect } from 'react-multi-select-component';
+import { useEffect, useState } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import Badge from 'react-bootstrap/Badge';
-import WorkExperiences from '../data/workExperiences';
-import TimelineModal from './TimelineModal';
-import IWorkExperience from '../interfaces/workExperiences';
-import TimelineCategory from '../enums/timelineCategories';
-import MultiSelect from 'react-multi-select-component';
-import IDropdown from '../interfaces/shared/IDropdown';
-import IProject from '../interfaces/projects';
-import IEducation from '../interfaces/education';
-import Projects from '../data/projects';
-import Education from '../data/education';
 
 type TypeLabel = { type: TimelineCategory };
 type WorkExperienceWithType = IWorkExperience & TypeLabel;
@@ -20,19 +20,19 @@ type EducationWithType = IEducation & TypeLabel;
 export type Data = WorkExperienceWithType | ProjectWithType | EducationWithType;
 
 const Timeline = (): JSX.Element => {
-  const WorkExperienceData: WorkExperienceWithType[] = WorkExperiences.map((data: WorkExperienceWithType) => {
+  const WorkExperienceData: WorkExperienceWithType[] = WorkExperiences.map((data) => {
     return {
       ...data,
       type: TimelineCategory.workExperiences
     };
   });
-  const ProjectsData: ProjectWithType[] = Projects.map((data: ProjectWithType) => {
+  const ProjectsData: ProjectWithType[] = Projects.map((data) => {
     return {
       ...data,
       type: TimelineCategory.projects
     };
   });
-  const EducationData: EducationWithType[] = Education.map((data: EducationWithType) => {
+  const EducationData: EducationWithType[] = Education.map((data) => {
     return {
       ...data,
       type: TimelineCategory.education
@@ -42,11 +42,11 @@ const Timeline = (): JSX.Element => {
     label: TimelineCategory.workExperiences,
     value: 'workExperiences'
   };
-  const [modalData, setModalData] = useState<Data>(null);
+  const [modalData, setModalData] = useState<Data | null>(null);
   const [detailsModalShow, setDetailsModalShow] = useState<boolean>(false);
-  const [selectedCategories, setSelectedCategories] = useState<Array<IDropdown>>([initialSelectedCategory]);
+  const [selectedCategories, setSelectedCategories] = useState<IDropdown[]>([initialSelectedCategory]);
   const [sectionName, setSectionName] = useState<string>(TimelineCategory.workExperiences);
-  const [timelineData, setTimelineData] = useState<Array<Data>>(WorkExperienceData);
+  const [timelineData, setTimelineData] = useState<Data[]>(WorkExperienceData);
 
   const formSectionName = (): string => {
     if (selectedCategories.length === 1) {
@@ -96,14 +96,14 @@ const Timeline = (): JSX.Element => {
     setDetailsModalShow(false);
   };
 
-  const options: Array<IDropdown> = Object.entries(TimelineCategory).map(([key, value]) => {
+  const options: IDropdown[] = Object.entries(TimelineCategory).map(([key, value]) => {
     return {
       value: key,
       label: value
     } as IDropdown;
   });
 
-  const dropdownOnChange = (e) => {
+  const dropdownOnChange = (e: IDropdown[]) => {
     // do not allow empty choice
     if (e[0]) setSelectedCategories(e);
   };
@@ -111,7 +111,7 @@ const Timeline = (): JSX.Element => {
   const data = timelineData.slice().map((d, i) => {
     const tech =
       'technologies' in d &&
-      d.technologies.map((technology, i) => {
+      d.technologies!.map((technology, i) => {
         return (
           <Badge className='experience-badge mr-2 mb-2' key={i}>
             {technology.label}

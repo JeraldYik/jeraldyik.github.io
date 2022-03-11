@@ -1,8 +1,8 @@
 export default interface IAward {
   name: string;
   location: string;
-  award: string | Array<string>;
+  award: string | string[];
   startDate: string;
   endDate?: string;
-  description: Array<string>;
+  description: string[];
 }

@@ -1,7 +1,7 @@
 import IAward from '../interfaces/awards';
 import Month from '../enums/months';
 
-const Awards: Array<IAward> = [
+const Awards: IAward[] = [
   {
     name: 'Amazon Web Service',
     location: 'Singapore',
