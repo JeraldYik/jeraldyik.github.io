@@ -20,7 +20,7 @@ const BasicInfo: IBasicInfo = {
       class: 'logos-github-icon'
     }
   ],
-  lastUpdated: `March 2022`
+  lastUpdated: `April 2022`
 };
 
 export default BasicInfo;

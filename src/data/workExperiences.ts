@@ -3,10 +3,20 @@ import Month from '../enums/months';
 
 const WorkExperiences: IWorkExperience[] = [
   {
+    organisation: 'Bytedance',
+    location: 'Singapore',
+    role: 'Software Engineer',
+    startDate: `${Month.MAY} 2022`,
+    technologies: [],
+    description: [],
+    anchors: []
+  },
+  {
     organisation: 'Open Government Products',
     location: 'Singapore',
     role: 'Software Engineering Intern',
     startDate: `${Month.NOVEMBER} 2021`,
+    endDate: `${Month.APRIL} 2022`,
     technologies: [
       {
         label: 'Typescript',
