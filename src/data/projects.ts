@@ -3,6 +3,58 @@ import Month from '../enums/months';
 
 const Projects: IProject[] = [
   {
+    name: 'Gemini DCA Automated Schedule Logic',
+    location: 'Singapore',
+    startDate: `${Month.APRIL} 2022`,
+    description: [
+      'Performs recurring buys of selected crypto coins daily',
+      'Penned down a design document to document everything relevant to the mini-project'
+    ],
+    anchors: [
+      {
+        label: 'Repository',
+        link: 'https://github.com/JeraldYik/gemini-dca'
+      }
+    ],
+    technologies: [
+      {
+        label: 'Typescript',
+        icon: 'devicon-typescript-plain'
+      },
+      {
+        label: 'NodeJS',
+        icon: 'devicon-nodejs-plain'
+      },
+      {
+        label: 'Google Sheets',
+        icon: 'devicon-google-plain'
+      },
+      {
+        label: 'PostgreSQL',
+        icon: 'devicon-postgresql-plain'
+      },
+      {
+        label: 'Sequelize',
+        icon: 'devicon-sequelize-plain'
+      },
+      {
+        label: 'Docker',
+        icon: 'devicon-docker-plain'
+      },
+      {
+        label: 'Heroku',
+        icon: 'devicon-heroku-original'
+      },
+      {
+        label: 'Mocha',
+        icon: 'devicon-mocha-plain'
+      },
+      {
+        label: 'Sentry'
+      }
+    ]
+  },
+  {
     name: 'Personal Portfolio Site',
     startDate: `${Month.MAY} 2019`,
     location: 'Singapore',
