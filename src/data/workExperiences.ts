@@ -3,13 +3,31 @@ import Month from '../enums/months';
 
 const WorkExperiences: IWorkExperience[] = [
   {
-    organisation: 'Bytedance',
+    organisation: 'Bytedance (Tiktok)',
     location: 'Singapore',
     role: 'Software Engineer',
     startDate: `${Month.MAY} 2022`,
-    technologies: [],
-    description: [],
-    anchors: []
+    technologies: [
+      {
+        label: 'Go',
+        icon: 'devicon-go-line'
+      },
+      {
+        label: 'MySQL',
+        icon: 'devicon-mysql-plain'
+      }
+    ],
+    description: ['Advertisement-related infrastructure', 'WIP !'],
+    anchors: [
+      {
+        label: 'Bytedance Official Website',
+        link: 'https://www.bytedance.com/en/'
+      },
+      {
+        label: 'Tiktok',
+        link: 'https://www.tiktok.com/'
+      }
+    ]
   },
   {
     organisation: 'Open Government Products',

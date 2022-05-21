@@ -2,7 +2,7 @@ import IBasicInfo from '../interfaces/basicInfo';
 
 const BasicInfo: IBasicInfo = {
   name: 'Jerald Yik',
-  titles: ['Full-Stack Developer', 'Software Engineer', 'Inquistive Learner', 'Passionate Experimenter'],
+  titles: ['Software Engineer', 'Full-Stack Developer', 'Inquistive Learner', 'Passionate Experimenter'],
   socials: [
     {
       name: 'linkedin',
@@ -20,7 +20,7 @@ const BasicInfo: IBasicInfo = {
       class: 'logos-github-icon'
     }
   ],
-  lastUpdated: `April 2022`
+  lastUpdated: `May 2022`
 };
 
 export default BasicInfo;
