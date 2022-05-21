@@ -74,6 +74,10 @@ const WorkExperiences: IWorkExperience[] = [
       {
         label: 'Hackathon project: QuizSG repository',
         link: 'https://github.com/opengovsg/quizSG'
+      },
+      {
+        label: 'Letter of Recommendation',
+        link: 'letter-of-recommendations/ogp.pdf'
       }
     ]
   },
@@ -127,7 +131,7 @@ const WorkExperiences: IWorkExperience[] = [
       },
       {
         label: 'Letter of Recommendation',
-        link: 'affinidi-letter-of-recommendation.pdf'
+        link: 'letter-of-recommendations/affinidi.pdf'
       }
       // {
       //   label: 'My very own Intern Verifiable Credential!',
@@ -248,7 +252,7 @@ const WorkExperiences: IWorkExperience[] = [
       },
       {
         label: 'Letter of Recommendation',
-        link: 'govtech-letter-of-recommendation.pdf'
+        link: 'letter-of-recommendations/govtech.pdf'
       }
     ]
   },
