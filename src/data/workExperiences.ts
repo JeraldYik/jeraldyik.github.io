@@ -15,9 +15,26 @@ const WorkExperiences: IWorkExperience[] = [
       {
         label: 'MySQL',
         icon: 'devicon-mysql-plain'
+      },
+      {
+        label: 'REST'
+      },
+      {
+        label: 'RPC'
+      },
+      {
+        label: 'GraphQL',
+        icon: 'devicon-graphql-plain'
+      },
+      {
+        label: 'Redis',
+        icon: 'devicon-redis-plain'
+      },
+      {
+        label: 'Cron'
       }
     ],
-    description: ['Advertisement-related infrastructure', 'WIP !'],
+    description: ['Payment Infrastructure for Bytedance internal products', 'Advertisement-related Infrastructure'],
     anchors: [
       {
         label: 'Bytedance Official Website',
@@ -48,7 +65,7 @@ const WorkExperiences: IWorkExperience[] = [
         label: 'Serverless'
       },
       {
-        label: 'Postgres',
+        label: 'PostgreSQL',
         icon: 'devicon-postgresql-plain'
       },
       {
@@ -199,7 +216,7 @@ const WorkExperiences: IWorkExperience[] = [
         icon: 'devicon-redis-plain'
       },
       {
-        label: 'SocketIo',
+        label: 'SocketIO',
         icon: 'devicon-socketio-original'
       },
       {

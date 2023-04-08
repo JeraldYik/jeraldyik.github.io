@@ -1,17 +1,19 @@
+import 'react-vertical-timeline-component/style.min.css';
+
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import { useEffect, useState } from 'react';
+
 import Badge from 'react-bootstrap/Badge';
 import Education from '../data/education';
 import IDropdown from '../interfaces/shared/IDropdown';
 import IEducation from '../interfaces/education';
 import IProject from '../interfaces/projects';
 import IWorkExperience from '../interfaces/workExperiences';
+import { MultiSelect } from 'react-multi-select-component';
 import Projects from '../data/projects';
 import TimelineCategory from '../enums/timelineCategories';
 import TimelineModal from './TimelineModal';
 import WorkExperiences from '../data/workExperiences';
-import { MultiSelect } from 'react-multi-select-component';
-import { useEffect, useState } from 'react';
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
 
 type TypeLabel = { type: TimelineCategory };
 type WorkExperienceWithType = IWorkExperience & TypeLabel;
@@ -83,7 +85,6 @@ const Timeline = (): JSX.Element => {
           break;
       }
     }
-    data.sort((a, b) => new Date(a.startDate).valueOf() - new Date(b.startDate).valueOf());
     setTimelineData(data);
   }, [selectedCategories]);
 
