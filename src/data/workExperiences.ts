@@ -1,9 +1,12 @@
-import IWorkExperience from '../interfaces/workExperiences';
 import Month from '../enums/months';
+import IWorkExperience from '../interfaces/workExperiences';
 
+/**
+ * devicon: https://devicon.dev/
+ */
 const WorkExperiences: IWorkExperience[] = [
   {
-    organisation: 'Bytedance (Tiktok)',
+    organisation: 'Bytedance (PIPO SG)',
     location: 'Singapore',
     role: 'Software Engineer',
     startDate: `${Month.MAY} 2022`,
@@ -47,7 +50,7 @@ const WorkExperiences: IWorkExperience[] = [
     ]
   },
   {
-    organisation: 'Open Government Products',
+    organisation: 'Open Government Products (OGP)',
     location: 'Singapore',
     role: 'Software Engineering Intern',
     startDate: `${Month.NOVEMBER} 2021`,
@@ -132,6 +135,10 @@ const WorkExperiences: IWorkExperience[] = [
         icon: 'devicon-mocha-plain'
       },
       {
+        label: 'Selenium',
+        icon: 'devicon-selenium-original'
+      },
+      {
         label: 'Supertest'
       },
       {
@@ -183,6 +190,7 @@ const WorkExperiences: IWorkExperience[] = [
     location: 'Hong Kong SAR',
     role: 'Backend Lead, Full-Stack Developer',
     startDate: `${Month.APRIL} 2021`,
+    endDate: `${Month.MAY} 2022`,
     description: [
       'Responsible for the Backend operations of the application',
       'Established backend infrastructure from ground up',

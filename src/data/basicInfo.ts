@@ -2,11 +2,11 @@ import IBasicInfo from '../interfaces/basicInfo';
 
 const BasicInfo: IBasicInfo = {
   name: 'Jerald Yik',
-  titles: ['Software Engineer', 'Inquistive Learner', 'Passionate Experimenter'],
+  titles: ['Software Engineer', 'Inquisitive Learner', 'Passionate Experimenter'],
   socials: [
     {
       name: 'linkedin',
-      url: 'https://www.linkedin.com/in/jerald-yik-jia-ler-203448191/',
+      url: 'https://www.linkedin.com/in/jerald-yik-jia-ler',
       class: 'bi:linkedin'
     },
     {
@@ -20,7 +20,7 @@ const BasicInfo: IBasicInfo = {
       class: 'logos-github-icon'
     }
   ],
-  lastUpdated: `Apr 2023`
+  lastUpdated: `Aug 2023`
 };
 
 export default BasicInfo;
