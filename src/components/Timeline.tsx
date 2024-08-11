@@ -1,19 +1,20 @@
 import 'react-vertical-timeline-component/style.min.css';
 
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { useEffect, useState } from 'react';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 
 import Badge from 'react-bootstrap/Badge';
+import { MultiSelect } from 'react-multi-select-component';
 import Education from '../data/education';
-import IDropdown from '../interfaces/shared/IDropdown';
+import Projects from '../data/projects';
+import WorkExperiences from '../data/workExperiences';
+import TimelineCategory from '../enums/timelineCategories';
 import IEducation from '../interfaces/education';
 import IProject from '../interfaces/projects';
+import IDropdown from '../interfaces/shared/IDropdown';
 import IWorkExperience from '../interfaces/workExperiences';
-import { MultiSelect } from 'react-multi-select-component';
-import Projects from '../data/projects';
-import TimelineCategory from '../enums/timelineCategories';
+import { calculateDuration } from '../utils/duration';
 import TimelineModal from './TimelineModal';
-import WorkExperiences from '../data/workExperiences';
 
 type TypeLabel = { type: TimelineCategory };
 type WorkExperienceWithType = IWorkExperience & TypeLabel;
@@ -119,10 +120,12 @@ const Timeline = (): JSX.Element => {
           </Badge>
         );
       });
+    const startDate = d.startDate;
+    const endDate = d.endDate ?? 'Present';
     return (
       <VerticalTimelineElement
         className='vertical-timeline-element--item vertical-timeline-element'
-        date={`${d.startDate} - ${d.endDate ?? 'Present'}`}
+        date={`${startDate} - ${endDate} (${calculateDuration(startDate, endDate)})`}
         iconStyle={{
           background: '#AE944F', // circle colour
           color: '#fff', // lines colour

@@ -1,10 +1,30 @@
-import IProject from '../interfaces/projects';
 import Month from '../enums/months';
+import IProject from '../interfaces/projects';
 
 const Projects: IProject[] = [
   {
+    name: 'Ethereum L2 Product DeGate write-up',
+    location: '',
+    startDate: `${Month.JULY} 2024`,
+    description: [
+      'Done up a 6-pager write-up on the Ethereum L2 product DeGate.',
+      'Penned down my understanding on the technical aspects of the project, as well as general Web3 concepts.'
+    ],
+    anchors: [
+      {
+        label: 'Document',
+        link: 'https://docs.google.com/document/d/1UsW2J6trKM7qpseHXkJ2BkjZERG9DP_bRbtDCKhZNI0/edit?usp=sharing'
+      }
+    ],
+    technologies: [
+      {
+        label: 'Web3'
+      }
+    ]
+  },
+  {
     name: 'Gemini DCA Automated Schedule Logic',
-    location: 'Singapore',
+    location: '',
     startDate: `${Month.APRIL} 2022`,
     description: [
       'Performs recurring buys of selected crypto coins daily',
@@ -57,7 +77,7 @@ const Projects: IProject[] = [
   {
     name: 'Personal Portfolio Site',
     startDate: `${Month.MAY} 2019`,
-    location: 'Singapore',
+    location: '',
     description: [
       'This personal portfolio site is created using ReactJS, together with Bootstrap and other styling tools and built-in components',
       'Initially a static HTML site, I took the effort to completely overhaul the codebase, creating a React Application from scratch to incorporate responsiveness, as well as other lovely functions and benefits ReactJS provides'
@@ -171,7 +191,7 @@ const Projects: IProject[] = [
     name: 'Nearby Eateries Webpage',
     startDate: `${Month.DECEMBER} 2020`,
     endDate: `${Month.DECEMBER} 2020`,
-    location: 'Singapore',
+    location: '',
     description: ['Created a Full-stack end-to-end Webpage as a side project to practice what I have learnt during my stint in GovTech'],
     anchors: [
       {
@@ -214,7 +234,7 @@ const Projects: IProject[] = [
     name: 'Telegram Bot',
     startDate: `${Month.NOVEMBER} 2020`,
     endDate: `${Month.NOVEMBER} 2020`,
-    location: 'Singapore',
+    location: '',
     description: ['Created a Telegram Bot that includes many features to not only convenient everyday life, but also as a learning platform'],
     anchors: [
       {
