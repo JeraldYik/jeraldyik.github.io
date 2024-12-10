@@ -1,7 +1,7 @@
 import profilePic from '../assets/images/about/profilePic.jpg';
 import AboutData from '../data/about';
 
-const About = (): JSX.Element => {
+const About: React.FC = () => {
   const sectionName = 'About Me';
   const hello = AboutData.descriptionHeader;
   const about = AboutData.description;

@@ -12,7 +12,7 @@ const WorkExperiences: IWorkExperience[] = [
     startDate: `${Month.MAY} 2022`,
     technologies: [
       {
-        label: 'Go',
+        label: 'Golang',
         icon: 'devicon-go-line'
       },
       {

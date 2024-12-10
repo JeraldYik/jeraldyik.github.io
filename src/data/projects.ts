@@ -28,15 +28,28 @@ const Projects: IProject[] = [
     startDate: `${Month.APRIL} 2022`,
     description: [
       'Performs recurring buys of selected crypto coins daily',
-      'Penned down a design document to document everything relevant to the mini-project'
+      'Penned down a design document to document everything relevant to the mini-project',
+      'Migrated logic from Node.js to Golang in Nov 2024'
     ],
     anchors: [
       {
         label: 'Repository',
+        link: 'https://github.com/JeraldYik/crypto_dca_go'
+      },
+      {
+        label: 'Repository (legacy)',
         link: 'https://github.com/JeraldYik/gemini-dca'
+      },
+      {
+        label: 'Design Document',
+        link: 'https://docs.google.com/document/d/1jUYHuTD6vl7BIbh2C48RT9o6VYQupZ8BEPhZ4oCTtVs'
       }
     ],
     technologies: [
+      {
+        label: 'Golang',
+        icon: 'devicon-go-line'
+      },
       {
         label: 'Typescript',
         icon: 'devicon-typescript-plain'

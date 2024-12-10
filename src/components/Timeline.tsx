@@ -22,7 +22,7 @@ type ProjectWithType = IProject & TypeLabel;
 type EducationWithType = IEducation & TypeLabel;
 export type Data = WorkExperienceWithType | ProjectWithType | EducationWithType;
 
-const Timeline = (): JSX.Element => {
+const Timeline: React.FC = () => {
   const WorkExperienceData: WorkExperienceWithType[] = WorkExperiences.map((data) => {
     return {
       ...data,

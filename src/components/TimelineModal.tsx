@@ -1,6 +1,7 @@
-import { Data } from './Timeline';
-import { Modal } from 'react-bootstrap';
 import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css';
+
+import { Modal } from 'react-bootstrap';
+import { Data } from './Timeline';
 
 interface IProps {
   data: Data;
@@ -8,7 +9,7 @@ interface IProps {
   show: boolean;
 }
 
-const TimelineModal = (props: IProps): JSX.Element => {
+const TimelineModal: React.FC<IProps> = (props: IProps) => {
   const header = ('organisation' in props.data && props.data.organisation) || ('name' in props.data && props.data.name);
   const subHeader = ('role' in props.data && props.data.role) || ('location' in props.data && props.data.location);
   const description = props.data.description.map((desc, i) => {

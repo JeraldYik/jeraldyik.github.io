@@ -1,8 +1,8 @@
-import BasicInfo from '../data/basicInfo';
-import Typical from 'react-typical';
 import { useMemo } from 'react';
+import Typical from 'react-typical';
+import BasicInfo from '../data/basicInfo';
 
-const Header = (): JSX.Element => {
+const Header: React.FC = () => {
   const name = BasicInfo.name;
   const titles = BasicInfo.titles.map((x) => [x.toUpperCase(), 1500]).flat();
   const socials = BasicInfo.socials;

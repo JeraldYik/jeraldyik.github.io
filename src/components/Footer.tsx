@@ -1,6 +1,6 @@
 import BasicInfo from '../data/basicInfo';
 
-const Footer = (): JSX.Element => {
+const Footer: React.FC = () => {
   return (
     <footer>
       <div className='col-md-12'>
