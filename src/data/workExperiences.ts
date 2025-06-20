@@ -6,10 +6,53 @@ import IWorkExperience from '../interfaces/workExperiences';
  */
 const WorkExperiences: IWorkExperience[] = [
   {
+    organisation: 'Airwallex',
+    location: 'Singapore',
+    role: 'Backend Software Engineer',
+    startDate: `${Month.FEBRUARY} 2025`,
+    technologies: [
+      {
+        label: 'Kotlin',
+        icon: 'devicon-kotlin-plain'
+      },
+      {
+        label: 'PostgreSQL',
+        icon: 'devicon-postgresql-plain'
+      },
+      {
+        label: 'GCP',
+        icon: 'devicon-googlecloud-plain'
+      },
+      {
+        label: 'Kubernetes',
+        icon: 'devicon-kubernetes-plain'
+      },
+      {
+        label: 'Splunk',
+        icon: 'devicon-splunk-original-wordmark'
+      },
+      {
+        label: 'Temporal'
+      }
+    ],
+    description: ['Issuing Cards'],
+    anchors: [
+      {
+        label: 'Airwallex Official Website (Issuing)',
+        link: 'https://www.airwallex.com/sg/platform-api-and-embedded-finance/issuing'
+      },
+      {
+        label: 'Create cards API documentation',
+        link: 'https://www.airwallex.com/docs/issuing__create-cards'
+      }
+    ]
+  },
+  {
     organisation: 'Bytedance (PIPO SG)',
     location: 'Singapore',
-    role: 'Software Engineer',
+    role: 'Backend Software Engineer',
     startDate: `${Month.MAY} 2022`,
+    endDate: `${Month.FEBRUARY} 2025`,
     technologies: [
       {
         label: 'Golang',

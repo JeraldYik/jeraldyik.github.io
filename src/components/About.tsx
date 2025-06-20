@@ -4,7 +4,7 @@ import AboutData from '../data/about';
 const About: React.FC = () => {
   const sectionName = 'About Me';
   const hello = AboutData.descriptionHeader;
-  const about = AboutData.description;
+  const descriptions = AboutData.description;
 
   return (
     <section id='about'>
@@ -42,7 +42,9 @@ const About: React.FC = () => {
                   <span className='wave'>{hello}</span>
                   <br />
                   <br />
-                  {about}
+                  {descriptions.map((desc) => (
+                    <p>{desc}</p>
+                  ))}
                 </div>
               </div>
             </div>
